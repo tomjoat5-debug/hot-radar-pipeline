@@ -33,7 +33,10 @@ def clean_hot_items(rows):
     cross_platform（0/1）；dropped 是丢弃数（缺标题或缺链接）。
     """
     cleaned, dropped = [], []
-    seen = set()
+    # 同一 (platform, 归一化标题) 只留 rank 最小的一条（rank 缺失视为最大）；
+    # 输入不一定按 rank 排，先按 key 选出最小 rank 的行，再按首次出现顺序输出。
+    best = {}
+    order = []
     for row in rows:
         title = (row.get("title") or "").strip()
         url = (row.get("url") or "").strip()
@@ -41,9 +44,18 @@ def clean_hot_items(rows):
             dropped.append(row)
             continue
         key = (row.get("platform"), normalize_title(title))
-        if key in seen:
-            continue
-        seen.add(key)
+        rank = to_int(row.get("rank"))
+        if key not in best:
+            order.append(key)
+            best[key] = (rank, row)
+        else:
+            prev_rank, _prev_row = best[key]
+            if rank is not None and (prev_rank is None or rank < prev_rank):
+                best[key] = (rank, row)
+    for key in order:
+        _rank, row = best[key]
+        title = (row.get("title") or "").strip()
+        url = (row.get("url") or "").strip()
         cleaned.append({
             "platform": row.get("platform"),
             "rank": to_int(row.get("rank")),

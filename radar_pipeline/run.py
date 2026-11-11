@@ -26,19 +26,43 @@ def main(argv=None) -> int:
     db_path.parent.mkdir(parents=True, exist_ok=True)
     conn = store.connect(str(db_path))
 
+    # 0. 上次快照（入库前抓取，用于报告里的“今日新增话题”）；
+    #    库里没有任何数据时记为首次运行（None）。
+    prev = store.counts(conn)
+    if prev["hot_items"] + prev["ai_items"] == 0:
+        previous_titles = None
+    else:
+        previous_titles = {
+            (r[0] or "") for r in conn.execute(
+                "SELECT normalized_title FROM hot_items")
+        } | {
+            clean.normalize_title(r[0]) for r in conn.execute(
+                "SELECT title FROM ai_items")
+        }
+
     # 1. 采集
     hot_by_platform, hot_errors = sources.fetch_all_hotboards(args.hot_limit)
-    ai_rows, ai_errors = [], {}
-    for fetcher in (sources.fetch_hf_models, sources.fetch_hf_papers,
-                    sources.fetch_hn_top, sources.fetch_github_trending,
-                    sources.fetch_arxiv):
+    ai_rows = []
+    ai_metrics = []
+    for name, fetcher in (
+        ("huggingface-models", sources.fetch_hf_models),
+        ("huggingface-papers", sources.fetch_hf_papers),
+        ("hackernews", sources.fetch_hn_top),
+        ("github-search", sources.fetch_github_trending),
+        ("arxiv", sources.fetch_arxiv),
+    ):
         rows, err = fetcher()
         ai_rows.extend(rows)
-        if err:
-            ai_errors[err.split(":")[0]] = err
-    rss_rows, rss_errors = sources.fetch_rss()
+        ai_metrics.append({"name": name, "status": "failed" if err else "ok",
+                           "rows": len(rows), "error": err or ""})
+    rss_rows, rss_errors, rss_counts = sources.fetch_rss()
     ai_rows.extend(rss_rows)
-    ai_errors.update(rss_errors)
+    for source, _url in sources.RSS_SOURCES:
+        err = rss_errors.get(source)
+        ai_metrics.append({"name": f"rss:{source}",
+                           "status": "failed" if err else "ok",
+                           "rows": rss_counts.get(source, 0),
+                           "error": err or ""})
 
     # 2. 清洗
     all_hot = [r for rows in hot_by_platform.values() for r in rows]
@@ -47,9 +71,23 @@ def main(argv=None) -> int:
 
     # 3. 入库（只替换成功拉到的平台/分区，失败的保留旧快照）
     ok_platforms = [p for p in hot_by_platform if p not in hot_errors]
-    store.store_hot_items(conn, [r for r in hot_clean if r["platform"] in ok_platforms],
-                          fetched_at)
+    hot_stored = [r for r in hot_clean if r["platform"] in ok_platforms]
+    store.store_hot_items(conn, hot_stored, fetched_at)
     store.store_ai_items(conn, ai_clean, fetched_at)
+
+    # 运行指标：各源成功/失败、抓取条数、去重数、丢弃数、入库数
+    hot_metrics = [{"name": p, "status": "failed" if p in hot_errors else "ok",
+                    "rows": len(rows), "error": hot_errors.get(p, "")}
+                   for p, rows in hot_by_platform.items()]
+    metrics = {
+        "hot": {"fetched": len(all_hot),
+                "duplicates": len(all_hot) - hot_dropped - len(hot_clean),
+                "dropped": hot_dropped, "stored": len(hot_stored)},
+        "ai": {"fetched": len(ai_rows),
+               "duplicates": len(ai_rows) - ai_dropped - len(ai_clean),
+               "dropped": ai_dropped, "stored": len(ai_clean)},
+        "sources": hot_metrics + ai_metrics,
+    }
 
     # 4. 日志
     for platform, rows in hot_by_platform.items():
@@ -58,8 +96,9 @@ def main(argv=None) -> int:
                               hot_errors[platform])
         else:
             store.log_refresh(conn, f"hotboard:{platform}", "ok", len(rows), 0, "")
-    for name, err in ai_errors.items():
-        store.log_refresh(conn, name, "failed", 0, 0, err)
+    for entry in ai_metrics:
+        if entry["status"] == "failed":
+            store.log_refresh(conn, entry["name"], "failed", 0, 0, entry["error"])
     store.log_refresh(conn, "ai:all", "ok", len(ai_clean), ai_dropped, "")
 
     # 5. 报告
@@ -68,15 +107,18 @@ def main(argv=None) -> int:
           f"AI 区：{len(ai_clean)} 条入库（丢弃 {ai_dropped}）")
     print(f"库内合计：热榜 {total['hot_items']} 条，AI {total['ai_items']} 条，"
           f"跨平台话题 {total['cross_platform']} 个")
-    if hot_errors or ai_errors:
+    failed = [s for s in metrics["sources"] if s["status"] == "failed"]
+    if failed:
         print("失败的源（已保留上次快照）：")
-        for err in list(hot_errors.values()) + list(ai_errors.values()):
-            print(f"  - {err}")
+        for s in failed:
+            print(f"  - {s['name']}: {s['error']}")
 
     if not args.no_report:
         report_path = Path(args.report)
         report_path.parent.mkdir(parents=True, exist_ok=True)
-        report_path.write_text(analyze.build_report(conn, fetched_at), encoding="utf-8")
+        report_path.write_text(
+            analyze.build_report(conn, fetched_at, metrics, previous_titles),
+            encoding="utf-8")
         print(f"报告已写到 {report_path}")
     conn.close()
     return 0

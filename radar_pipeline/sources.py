@@ -13,7 +13,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
-UA = {"User-Agent": "hot-radar-pipeline/0.1 (+https://github.com/)"}
+UA = {"User-Agent": "hot-radar-pipeline/0.2 (+https://github.com/)"}
 TIMEOUT = 20
 
 # UAPI 热榜聚合：11 个平台，免 Key
@@ -222,13 +222,17 @@ def _parse_rss(text: str, source: str, limit: int = 10):
 
 
 def fetch_rss(limit: int = 10):
-    rows, errors = [], {}
+    """4 个 RSS 源。返回 (rows, errors, counts)：counts 是每源抓到的条数。"""
+    rows, errors, counts = [], {}, {}
     for source, url in RSS_SOURCES:
         try:
-            rows.extend(_parse_rss(_get_text(url), source, limit))
+            parsed = _parse_rss(_get_text(url), source, limit)
+            rows.extend(parsed)
+            counts[source] = len(parsed)
         except (urllib.error.URLError, TimeoutError, OSError, http.client.HTTPException) as exc:
             errors[source] = f"rss-{source}: {exc}"
-    return rows, errors
+            counts[source] = 0
+    return rows, errors, counts
 
 
 def fetch_arxiv(limit: int = 8):
