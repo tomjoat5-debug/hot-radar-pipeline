@@ -1,4 +1,4 @@
-# 热点雷达日报（2026-11-26T09:12:18.839119+00:00）
+# 热点雷达日报（2026-11-27T09:28:47.882722+00:00）
 
 ## 本次运行
 - 数据源：20 个，成功 20 个，失败 0 个
@@ -6,26 +6,26 @@
 - AI 区：抓到 95 条，去重 0 条，丢弃 0 条，入库 95 条
 
 ## 今日新增话题
-- [开拓者116:111击败马刺](https://www.douyin.com/search/%E5%BC%80%E6%8B%93%E8%80%85116%3A111%E5%87%BB%E8%B4%A5%E9%A9%AC%E5%88%BA?type=general)
-- [提前预习圣诞穿搭](https://www.douyin.com/search/%E6%8F%90%E5%89%8D%E9%A2%84%E4%B9%A0%E5%9C%A3%E8%AF%9E%E7%A9%BF%E6%90%AD?type=general)
-- [深圳奇迹属于奋斗者](https://www.douyin.com/search/%E6%B7%B1%E5%9C%B3%E5%A5%87%E8%BF%B9%E5%B1%9E%E4%BA%8E%E5%A5%8B%E6%96%97%E8%80%85?type=general)
-- [清迈的天灯节也太美了吧](https://www.douyin.com/search/%E6%B8%85%E8%BF%88%E7%9A%84%E5%A4%A9%E7%81%AF%E8%8A%82%E4%B9%9F%E5%A4%AA%E7%BE%8E%E4%BA%86%E5%90%A7?type=general)
-- [韩国央行加息25个基点](https://www.douyin.com/search/%E9%9F%A9%E5%9B%BD%E5%A4%AE%E8%A1%8C%E5%8A%A0%E6%81%AF25%E4%B8%AA%E5%9F%BA%E7%82%B9?type=general)
-- [尼克斯逆转击败骑士](https://www.douyin.com/search/%E5%B0%BC%E5%85%8B%E6%96%AF%E9%80%86%E8%BD%AC%E5%87%BB%E8%B4%A5%E9%AA%91%E5%A3%AB?type=general)
-- [76人111:104热火](https://www.douyin.com/search/76%E4%BA%BA111%3A104%E7%83%AD%E7%81%AB?type=general)
-- [同频朋友是最好的生日礼物](https://www.douyin.com/search/%E5%90%8C%E9%A2%91%E6%9C%8B%E5%8F%8B%E6%98%AF%E6%9C%80%E5%A5%BD%E7%9A%84%E7%94%9F%E6%97%A5%E7%A4%BC%E7%89%A9?type=general)
-- [评论区摄影作品点评大赛开启](https://www.douyin.com/search/%E8%AF%84%E8%AE%BA%E5%8C%BA%E6%91%84%E5%BD%B1%E4%BD%9C%E5%93%81%E7%82%B9%E8%AF%84%E5%A4%A7%E8%B5%9B%E5%BC%80%E5%90%AF?type=general)
-- [11月26日24时油价下调](https://www.douyin.com/search/11%E6%9C%8826%E6%97%A524%E6%97%B6%E6%B2%B9%E4%BB%B7%E4%B8%8B%E8%B0%83?type=general)
-- [蔡磊回应“病情进入终末期”](https://www.baidu.com/s?wd=%E8%94%A1%E7%A3%8A%E5%9B%9E%E5%BA%94%E2%80%9C%E7%97%85%E6%83%85%E8%BF%9B%E5%85%A5%E7%BB%88%E6%9C%AB%E6%9C%9F%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news)
-- [央视网评金价大跌下的购金热](https://www.douyin.com/search/%E5%A4%AE%E8%A7%86%E7%BD%91%E8%AF%84%E9%87%91%E4%BB%B7%E5%A4%A7%E8%B7%8C%E4%B8%8B%E7%9A%84%E8%B4%AD%E9%87%91%E7%83%AD?type=general)
-- [辨一辨这些食品安全谣言](https://www.douyin.com/search/%E8%BE%A8%E4%B8%80%E8%BE%A8%E8%BF%99%E4%BA%9B%E9%A3%9F%E5%93%81%E5%AE%89%E5%85%A8%E8%B0%A3%E8%A8%80?type=general)
-- [太原金屋大厦火灾细节披露](https://www.douyin.com/search/%E5%A4%AA%E5%8E%9F%E9%87%91%E5%B1%8B%E5%A4%A7%E5%8E%A6%E7%81%AB%E7%81%BE%E7%BB%86%E8%8A%82%E6%8A%AB%E9%9C%B2?type=general)
-- [申京三双助火箭复仇太阳](https://www.douyin.com/search/%E7%94%B3%E4%BA%AC%E4%B8%89%E5%8F%8C%E5%8A%A9%E7%81%AB%E7%AE%AD%E5%A4%8D%E4%BB%87%E5%A4%AA%E9%98%B3?type=general)
+- [A股全线收红 创业板涨超11%](https://www.douyin.com/search/A%E8%82%A1%E5%85%A8%E7%BA%BF%E6%94%B6%E7%BA%A2%20%E5%88%9B%E4%B8%9A%E6%9D%BF%E6%B6%A8%E8%B6%8511%25?type=general)
+- [国常会：加力发挥“国家队”稳市作用](https://www.douyin.com/search/%E5%9B%BD%E5%B8%B8%E4%BC%9A%EF%BC%9A%E5%8A%A0%E5%8A%9B%E5%8F%91%E6%8C%A5%E5%9B%BD%E5%AE%B6%E9%98%9F%E7%A8%B3%E5%B8%82%E4%BD%9C%E7%94%A8?type=general)
+- [高交会高在哪里](https://www.douyin.com/search/%E9%AB%98%E4%BA%A4%E4%BC%9A%E9%AB%98%E5%9C%A8%E5%93%AA%E9%87%8C?type=general)
+- [在济南过一个冒热气的周末](https://www.douyin.com/search/%E5%9C%A8%E6%B5%8E%E5%8D%97%E8%BF%87%E4%B8%80%E4%B8%AA%E5%86%92%E7%83%AD%E6%B0%94%E7%9A%84%E5%91%A8%E6%9C%AB?type=general)
+- [中国男篮80:82不敌沙特男篮](https://www.douyin.com/search/%E4%B8%AD%E5%9B%BD%E7%94%B7%E7%AF%AE80%3A82%E4%B8%8D%E6%95%8C%E6%B2%99%E7%89%B9%E7%94%B7%E7%AF%AE?type=general)
+- [2026广州车展开幕](https://www.douyin.com/search/2026%E5%B9%BF%E5%B7%9E%E8%BD%A6%E5%B1%95%E5%BC%80%E5%B9%95?type=general)
+- [今日起电视开机广告没了](https://www.douyin.com/search/%E4%BB%8A%E6%97%A5%E8%B5%B7%E7%94%B5%E8%A7%86%E5%BC%80%E6%9C%BA%E5%B9%BF%E5%91%8A%E6%B2%A1%E4%BA%86?type=general)
+- [你吃的小米其实是狗尾巴草子孙](https://www.douyin.com/search/%E4%BD%A0%E5%90%83%E7%9A%84%E5%B0%8F%E7%B1%B3%E5%85%B6%E5%AE%9E%E6%98%AF%E7%8B%97%E5%B0%BE%E5%B7%B4%E8%8D%89%E5%AD%90%E5%AD%99?type=general)
+- [火旺动画定档](https://www.douyin.com/search/%E7%81%AB%E6%97%BA%E5%8A%A8%E7%94%BB%E5%AE%9A%E6%A1%A3?type=general)
+- [羊年贵金属纪念币今日发行](https://www.douyin.com/search/%E7%BE%8A%E5%B9%B4%E8%B4%B5%E9%87%91%E5%B1%9E%E7%BA%AA%E5%BF%B5%E5%B8%81%E4%BB%8A%E6%97%A5%E5%8F%91%E8%A1%8C?type=general)
+- [冬日冷感忧郁穿搭](https://www.douyin.com/search/%E5%86%AC%E6%97%A5%E5%86%B7%E6%84%9F%E5%BF%A7%E9%83%81%E7%A9%BF%E6%90%AD?type=general)
+- [普通人冬日彩色穿搭公式](https://www.douyin.com/search/%E6%99%AE%E9%80%9A%E4%BA%BA%E5%86%AC%E6%97%A5%E5%BD%A9%E8%89%B2%E7%A9%BF%E6%90%AD%E5%85%AC%E5%BC%8F?type=general)
+- [清谣护苗 护航成长](https://www.douyin.com/search/%E6%B8%85%E8%B0%A3%E6%8A%A4%E8%8B%97%20%E6%8A%A4%E8%88%AA%E6%88%90%E9%95%BF?type=general)
+- [复联5万磁王摘毁灭博士面具](https://www.douyin.com/search/%E5%A4%8D%E8%81%945%E4%B8%87%E7%A3%81%E7%8E%8B%E6%91%98%E6%AF%81%E7%81%AD%E5%8D%9A%E5%A3%AB%E9%9D%A2%E5%85%B7?type=general)
+- [胡歌刘涛天台吻戏路透好甜](https://www.douyin.com/search/%E8%83%A1%E6%AD%8C%E5%88%98%E6%B6%9B%E5%A4%A9%E5%8F%B0%E5%90%BB%E6%88%8F%E8%B7%AF%E9%80%8F%E5%A5%BD%E7%94%9C?type=general)
 
 ## 跨平台热议
-- 蔡磊回应“病情进入终末期”（3 个平台：baidu,douyin,toutiao，最高热度 9270536）
-- 普京在深圳下榻酒店留下亲笔签名（2 个平台：baidu,toutiao，最高热度 7329977）
-- 歼-20A、运-20B将首次亮相中国航展（2 个平台：baidu,kuaishou，最高热度 6189905）
+- 清谣护苗 护航成长（3 个平台：douyin,toutiao,kuaishou，最高热度 9160608）
+- 国常会：加力发挥“国家队”稳市作用（2 个平台：douyin,toutiao，最高热度 11375565）
+- 巴航天员进驻天宫进入工作状态（2 个平台：douyin,kuaishou，最高热度 9020710）
 
 ## 各平台条数
 - kuaishou：30 条
@@ -41,16 +41,16 @@
 - ithome：12 条
 
 ## AI 趋势模型 Top 10
-- [thinkingmachines/Inkling-2-Mini](https://huggingface.co/thinkingmachines/Inkling-2-Mini)（trendingScore 1353，image-text-to-text | likes 6105 | downloads 96527）
-- [unsloth/Inkling-2-Mini-GGUF](https://huggingface.co/unsloth/Inkling-2-Mini-GGUF)（trendingScore 1176，image-text-to-text | likes 1397 | downloads 2445633）
-- [inworld/voice-isolator](https://huggingface.co/inworld/voice-isolator)（trendingScore 573，audio-to-audio | likes 915 | downloads 15244）
-- [SulphurAI/Sulphur-3](https://huggingface.co/SulphurAI/Sulphur-3)（trendingScore 429， | likes 1137 | downloads 189735）
-- [prism-ml/Ternary-Bonsai-2.5-27B-GGUF](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF)（trendingScore 358，text-generation | likes 403 | downloads 59366）
-- [Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)（trendingScore 314，image-to-video | likes 13474 | downloads 3041405）
-- [apple/DepthPro2](https://huggingface.co/apple/DepthPro2)（trendingScore 210，depth-estimation | likes 1264 | downloads 0）
-- [llamaindex/OCRia-nano-1](https://huggingface.co/llamaindex/OCRia-nano-1)（trendingScore 203，image-to-text | likes 245 | downloads 126）
-- [inclusionAI/Ling-3.2-air](https://huggingface.co/inclusionAI/Ling-3.2-air)（trendingScore 183， | likes 240 | downloads 1467）
-- [nvidia/Nemotron-Labs-Image-30B-A3B](https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B)（trendingScore 177，text-to-image | likes 209 | downloads 218）
+- [unsloth/Inkling-2-Mini-GGUF](https://huggingface.co/unsloth/Inkling-2-Mini-GGUF)（trendingScore 1258，image-text-to-text | likes 1525 | downloads 2445633）
+- [SulphurAI/Sulphur-3](https://huggingface.co/SulphurAI/Sulphur-3)（trendingScore 533， | likes 1272 | downloads 189735）
+- [prism-ml/Ternary-Bonsai-2.5-27B-GGUF](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF)（trendingScore 492，text-generation | likes 565 | downloads 59366）
+- [inworld/voice-isolator](https://huggingface.co/inworld/voice-isolator)（trendingScore 464，audio-to-audio | likes 975 | downloads 15244）
+- [Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)（trendingScore 335，image-to-video | likes 13623 | downloads 3041405）
+- [nvidia/Nemotron-Labs-Image-30B-A3B](https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B)（trendingScore 231，text-to-image | likes 293 | downloads 218）
+- [llamaindex/OCRia-nano-1](https://huggingface.co/llamaindex/OCRia-nano-1)（trendingScore 227，image-to-text | likes 291 | downloads 126）
+- [apple/DepthPro2](https://huggingface.co/apple/DepthPro2)（trendingScore 206，depth-estimation | likes 1327 | downloads 0）
+- [inclusionAI/Ling-3.2-air](https://huggingface.co/inclusionAI/Ling-3.2-air)（trendingScore 198， | likes 274 | downloads 1467）
+- [strata-engine/Inkling-2-Mini-Strata](https://huggingface.co/strata-engine/Inkling-2-Mini-Strata)（trendingScore 186，image-text-to-text | likes 251 | downloads 2965）
 
 ## 最新论文
 - [Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning](https://arxiv.org/abs/2611.34942v1)（arXiv，2026-11-25T18:59:57Z）
@@ -61,7 +61,7 @@
 - [Mixture-of-Loops Transformer](https://arxiv.org/abs/2611.34923v1)（arXiv，2026-11-25T18:58:53Z）
 - [$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents](https://arxiv.org/abs/2611.34920v1)（arXiv，2026-11-25T18:58:42Z）
 - [Enhancing Maritime Domain Awareness using Latent Space Representations](https://arxiv.org/abs/2611.34899v1)（arXiv，2026-11-25T18:51:36Z）
-- [When Every Rollout Fails: Splicing Learner-Conditioned Options into Long-Horizon Agent RL](https://huggingface.co/papers/2611.34777)（Hugging Face Daily Papers，2026-11-25T00:00:00.000Z）
-- [Collect for Coverage, Replay with Evidence: Adaptive and Efficient On-Policy Distillation for Long-Horizon Agents](https://huggingface.co/papers/2611.34756)（Hugging Face Daily Papers，2026-11-25T00:00:00.000Z）
+- [Generation as Reverse Encoding](https://huggingface.co/papers/2611.34782)（Hugging Face Daily Papers，2026-11-25T00:00:00.000Z）
+- [Reading, Not Adapting: Unlocking Frozen Visual Knowledge for AI-Generated Image Detection](https://huggingface.co/papers/2611.34719)（Hugging Face Daily Papers，2026-11-25T00:00:00.000Z）
 
 _数据来源见 docs/SOURCES.md；失败源保留上次快照，报告不编数据。_
